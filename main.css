@@ -1,5 +1,44 @@
+/* font-face Helvetica Neue */
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Regular.otf);
+  }
+@font-face {
+    font-family: HelveticaNeueMed;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Medium.otf);
+}
+@font-face {
+    font-family: HelveticaNeueBold;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Bold.otf);
+}
+@font-face {
+    font-family: HelveticaNeueHeav;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Heavy.otf);
+}
+@font-face {
+    font-family: HelveticaNeueLight;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Light.otf);
+}
+@font-face {
+    font-family: HelveticaNeueUltLight;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Ultralight.otf);
+}
+@font-face {
+    font-family: HelveticaNeueRoman;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Roman.otf);
+}
+@font-face {
+    font-family: HelveticaNeueThin;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Thin.otf);
+}
+
+/* ------------ */
+
 html,body{
     background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0  ;
 }
 
 #loadani{
@@ -18,4 +57,35 @@ html,body{
     flex-direction: column;
     justify-content:center;
     text-align: center;
+}
+
+#landing{
+    position: relative;
+}
+
+#landing > img{
+    width: auto;    
+    height: 100dvh; 
+    float: right;
+}
+
+#landing >div> h1{
+    line-height: normal;
+    margin: 0;
+    font-size: 13em;
+    line-height: 0.7em;
+    font-family: HelveticaNeueBold;
+}
+#landing >div> h2{
+    line-height: normal;
+    margin: 0;
+    font-size: 6em;
+    line-height: 1em;
+    font-family: HelveticaNeueBold;
+}
+
+#titlewrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
 }

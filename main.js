@@ -12,7 +12,7 @@ const animItem = bodymovin.loadAnimation({
 
 // Using JQUERY to handle page load with a delay because page is not heavy enough.
 $(window).on("load",function(){
-    $(".loader-wrapper").delay(2000).fadeToggle(300);
-    // $(".loader-wrapper").hide();
+    // $(".loader-wrapper").delay(2000).fadeToggle(300);
+    $(".loader-wrapper").hide();
 });
 //----------------------------------------
