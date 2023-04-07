@@ -9,3 +9,10 @@ const animItem = bodymovin.loadAnimation({
     speed: 3,
 });
 //----------------------------------------
+
+// Using JQUERY to handle page load with a delay because page is not heavy enough.
+$(window).on("load",function(){
+    $(".loader-wrapper").delay(2000).fadeToggle(300);
+    // $(".loader-wrapper").hide();
+});
+//----------------------------------------
