@@ -87,5 +87,29 @@ html,body{
 #titlewrapper{
     position: absolute;
     top: 0;
+    left: -1000px;
+}
+
+.canvas{
+    position: relative;
+    margin: 0;
+}
+
+#rightArr{
+    position: absolute;
+    margin: 0;
+    right: 0;
+    padding-top: 25%;
+    padding-right: 2em;
+    cursor: pointer;
+    z-index: 2;
+}
+#leftArr{
+    position: absolute;
+    margin: 0;
     left: 0;
+    padding-top: 25%;
+    padding-left: 2em;
+    cursor: pointer;
+    z-index: 2;
 }

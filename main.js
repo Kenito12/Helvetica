@@ -1,3 +1,28 @@
+// Pages DOM
+let loadingP = document.getElementById("loader-wrap");
+let landingP = document.getElementById("landing");
+let contentP = document.getElementById("content");
+let typoP = document.getElementById("typo");
+let demoP = document.getElementById("demo");
+//----------------------------------------
+
+// Arrow buttons
+let rightArr = document.getElementById("rightArr");
+let leftArr = document.getElementById("leftArr");
+rightArr.style.display = "none";
+leftArr.style.display = "none";
+//----------------------------------------
+
+
+// Pages Visibility default
+landingP.style.display = "none"
+contentP.style.display = "none"
+typoP.style.display = "none"
+demoP.style.display = "none"
+//----------------------------------------
+
+
+
 //bodymovin js to play Lottiefiles
 const loadAnimation = document.getElementById("loadani")
 const animItem = bodymovin.loadAnimation({
@@ -6,13 +31,65 @@ const animItem = bodymovin.loadAnimation({
     loop: false,
     autoplay: true,
     path:'/Assets/loading.json',
-    speed: 3,
 });
 //----------------------------------------
 
 // Using JQUERY to handle page load with a delay because page is not heavy enough.
 $(window).on("load",function(){
-    // $(".loader-wrapper").delay(2000).fadeToggle(300);
-    $(".loader-wrapper").hide();
+    $(".loader-wrapper").delay(2000).fadeToggle(300);
+    // $(".loader-wrapper").hide();
 });
 //----------------------------------------
+
+setTimeout(`loadingP.style.display = "none"
+            landingP.style.display = "block"
+            rightArr.style.display = "block"`, 2400);
+
+// Anime.js animation
+var hptitleLoad = anime({
+    targets: '#titlewrapper',
+    delay: 2100,
+    translateX : 1000,
+    // autoplay: false
+  });
+//----------------------------------------
+
+
+// Arrow functions
+rightArr.onclick = () => {
+
+    if(landingP.style.display == "block")
+    {
+        landingP.style.display = "none";
+        contentP.style.display ="block";
+        leftArr.style.display = "block";
+    }
+    else if(contentP.style.display == "block")
+    {
+        contentP.style.display = "none";
+        typoP.style.display = "block";
+    }
+    else if(typoP.style.display == "block")
+    {
+        typoP.style.display = "none";
+        demoP.style.display = "block";
+        rightArr.style.display = "none";
+        leftArr.style.display = "none"
+    }
+    
+}
+leftArr.onclick = () => {
+
+    if(contentP.style.display == "block")
+    {
+        contentP.style.display = "none";
+        landingP.style.display = "block";
+        leftArr.style.display = "none";
+    }
+    else if(typoP.style.display == "block")
+    {
+        typoP.style.display = "none";
+        contentP.style.display = "block";
+    }  
+}
+
