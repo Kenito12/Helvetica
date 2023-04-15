@@ -102,7 +102,7 @@ html,body{
     padding-top: 25%;
     padding-right: 2em;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
 }
 #leftArr{
     position: absolute;
@@ -111,5 +111,73 @@ html,body{
     padding-top: 25%;
     padding-left: 2em;
     cursor: pointer;
+    z-index: 5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-family: HelveticaNeue;
+    line-height: 1.44rem ;
+}
+.firstletter{
+    font-size: 2.5rem;
+    color: #d5333b;
+}
+
+.col1{
+    width: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 25%;
+}
+.col2{
+    padding-top: 25%;
+    width: auto;
+}
+.col3{
+    width: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 110%;
+}
+
+#typo{
+    font-family: HelveticaNeue;
+    font-size: 1.25rem;
+    line-height: 1.44rem ;
+}
+#vidBg{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+#filter{
+    background-color:black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
     z-index: 2;
+}
+.typoImg{
+    position: relative;
+    z-index: 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#typoCont{
+    position: relative;
+}
+#typoP1{
+    position: absolute;
+    z-index: 4;
+    left: 10%;
+    top: 0;
 }
