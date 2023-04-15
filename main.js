@@ -9,8 +9,10 @@ let demoP = document.getElementById("demo");
 // Arrow buttons
 let rightArr = document.getElementById("rightArr");
 let leftArr = document.getElementById("leftArr");
+let refreshBut = document.getElementById("refreshBut")
 rightArr.style.display = "none";
 leftArr.style.display = "none";
+refreshBut.style.display = "none";
 //----------------------------------------
 
 
@@ -87,6 +89,7 @@ rightArr.onclick = () => {
         demoP.style.display = "block";
         rightArr.style.display = "none";
         leftArr.style.display = "none"
+        refreshBut.style.display = "block"
         typeEffect();
         document.getElementById("typer").focus();
     }
@@ -107,6 +110,13 @@ leftArr.onclick = () => {
     }  
 }
 
+refreshBut.onclick = () => {
+    demoP.style.display = "none"
+    refreshBut.style.display = "none"
+    rightArr.style.display = "block"
+    landingP.style.display = "block"
+}
+
 let ChangeFont = (font) => {
     
 document.getElementById("typer").style.fontFamily = font;
@@ -116,7 +126,7 @@ document.getElementById("typer").focus();
 let resizeL = () => {
     let letter = document.getElementById("typer")
 
-    if(letter.value.length >= 7){
+    if(letter.value.length >= 9){
         letter.style.fontSize = "10rem";
         console.log("Size change");
     }
@@ -124,3 +134,5 @@ let resizeL = () => {
         letter.style.fontSize = "16rem";
     }
 }
+
+

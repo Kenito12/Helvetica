@@ -42,8 +42,10 @@ html,body{
     background-color: black;
     color: white;
     margin: 0;
-    padding: 0  ;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
 }
+
 
 #loadani{
     width: 70%;
@@ -114,6 +116,15 @@ html,body{
     left: 0;
     padding-top: 25%;
     padding-left: 2em;
+    cursor: pointer;
+    z-index: 5;
+}
+#refreshBut{
+    position: absolute;
+    margin: 0;
+    right: 0;
+    padding-top: 50%;
+    padding-right: 2em;
     cursor: pointer;
     z-index: 5;
 }
@@ -201,6 +212,7 @@ html,body{
 }
 #styleOp > div{
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 #styleOp > div:hover{
     color: white;
@@ -214,4 +226,5 @@ html,body{
     width: 60%;
     margin-top: 22%;
     font-family: HelveticaNeueBold;
+    transition: all 0.3s ease-in-out;
 }
