@@ -54,6 +54,18 @@ var hptitleLoad = anime({
   });
 //----------------------------------------
 
+let count = 0;
+let helvetica = 'Helvetica';
+let speed = 100;
+
+let typeEffect = () => {
+
+    if (count < helvetica.length) {
+        document.getElementById("typer").value += helvetica.charAt(count);
+        count++;
+        setTimeout(typeEffect, speed);
+      }
+}
 
 // Arrow functions
 rightArr.onclick = () => {
@@ -75,6 +87,8 @@ rightArr.onclick = () => {
         demoP.style.display = "block";
         rightArr.style.display = "none";
         leftArr.style.display = "none"
+        typeEffect();
+        document.getElementById("typer").focus();
     }
     
 }
@@ -91,5 +105,9 @@ leftArr.onclick = () => {
         typoP.style.display = "none";
         contentP.style.display = "block";
     }  
+}
+
+let ChangeFont = (font) => {
+    console.log(font)
 }
 

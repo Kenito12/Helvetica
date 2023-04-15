@@ -178,6 +178,36 @@ html,body{
 #typoP1{
     position: absolute;
     z-index: 4;
-    left: 10%;
-    top: 0;
+    left: 43%;
+    top: 20%;
+}
+#typoP2{
+    position: absolute;
+    z-index: 4;
+    left: 34%;
+    top: 60%;
+}
+#styleOp{
+    font-family: HelveticaNeueBold;
+    font-size: 8.9rem;
+    line-height: 8.5rem;
+    color: #404040;
+    width: 35%;
+    float: left;
+}
+#styleOp > div{
+    cursor: pointer;
+}
+#styleOp > div:hover{
+    color: white;
+}
+#typer{
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+    font-size: 16rem;
+    width: 60%;
+    margin-top: 22%;
+    font-family: HelveticaNeueBold;
 }
