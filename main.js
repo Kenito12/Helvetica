@@ -108,6 +108,19 @@ leftArr.onclick = () => {
 }
 
 let ChangeFont = (font) => {
-    console.log(font)
+    
+document.getElementById("typer").style.fontFamily = font;
+document.getElementById("typer").focus();
 }
 
+let resizeL = () => {
+    let letter = document.getElementById("typer")
+
+    if(letter.value.length >= 7){
+        letter.style.fontSize = "10rem";
+        console.log("Size change");
+    }
+    else{
+        letter.style.fontSize = "16rem";
+    }
+}

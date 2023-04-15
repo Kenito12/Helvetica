@@ -31,6 +31,10 @@
     font-family: HelveticaNeueThin;
     src: url(Font/helvetica-neue-master/HelveticaNeue-Thin.otf);
 }
+@font-face {
+    font-family: HelveticaNeueBlack;
+    src: url(Font/helvetica-neue-master/HelveticaNeue-Black.otf);
+}
 
 /* ------------ */
 
